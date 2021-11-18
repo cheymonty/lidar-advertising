@@ -14,19 +14,39 @@
     </p>
     <h2 style="text-align: center">Features:</h2>
 
+    <h3>LVT Data Format API</h3>
+    <ul>
+      <li>camera: contains the RGB images from different cameras</li>
+      <li>
+        pointcloud: contains PCD files with LiDAR pointclouds for each sensor
+      </li>
+      <li>
+        bounding: contains the ground truth bounding boxes for each frame as
+        JSON files
+      </li>
+      <li>
+        pred_bounding: contains the predicted bounding boxes for each frame as
+        JSON files
+      </li>
+      <li>
+        ego: contains the translation and rotation for each frame as JSON files
+      </li>
+    </ul>
+
     <h3>Conversion Tool</h3>
     <p>
-      Can convert any dataset into LCT, our own generic dataset that is read by
-      the visualizer
+      Utility functions provided to aid in converting any dataset into the LVT
+      data format
     </p>
-    <p>Built in nuScenes and Waymo conversion script</p>
+    <p>Built-in nuScenes and Waymo conversion script</p>
 
     <h3>Visualization Tool</h3>
+    <p>Visualizes LVT data format</p>
     <p>Easily switch between point cloud and RGB view</p>
     <p>Rotate point cloud in free space</p>
     <p>Filter what annotations are shown</p>
 
-    <h2 style="text-align: center">Benefits over alternatives:</h2>
+    <h2 style="text-align: center">Benefits over alternative methods:</h2>
     <p>No need to</p>
   </body>
 </html>
