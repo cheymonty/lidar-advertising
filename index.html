@@ -2,51 +2,97 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>LiDAR</title>
+    <title>LiDAR Visualization Tool</title>
+    <link rel="shortcut icon" href="assets/image.ico" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body style="flex: 1">
-    <h1 style="text-align: center">LiDAR Visualization Tool</h1>
-    <p>
-      LiDAR Visualization Tool (LVT) is an open-source application enabling
-      autonomous vehicle researchers to visualize data from different formats
-      and gives them a comprehensive tool to analyze their machine learning
-      algorithms
-    </p>
-    <h2 style="text-align: center">Features:</h2>
+  <body>
+    <div class="header">
+      <h1 class="heading-text">LiDAR Visualization Tool</h1>
+      <p class="center" style="margin-left: 20%; margin-right: 20%">
+        LiDAR Visualization Tool (LVT) is an open-source application enabling
+        autonomous vehicle researchers to visualize data from different formats
+        and gives them a comprehensive tool to analyze their machine learning
+        algorithms
+      </p>
+    </div>
 
-    <h3>LCT Data Format API</h3>
-    <ul>
-      <li>camera: contains the RGB images from different cameras</li>
-      <li>
-        pointcloud: contains PCD files with LiDAR pointclouds for each sensor
-      </li>
-      <li>
-        bounding: contains the ground truth bounding boxes for each frame as
-        JSON files
-      </li>
-      <li>
-        pred_bounding: contains the predicted bounding boxes for each frame as
-        JSON files
-      </li>
-      <li>
-        ego: contains the translation and rotation for each frame as JSON files
-      </li>
-    </ul>
+    <div class="content">
+      <h1 class="section-text">At a Glance</h1>
+      <div style="display: flex">
+        <img src="assets/rgb.png" style="width: 400px; height: 350px" />
+        <img src="assets/controls.png" style="width: 250px; height: 350px" />
+        <img src="assets/pointcloud.png" style="width: 400px; height: 350px" />
+      </div>
 
-    <h3>Conversion Tool</h3>
-    <p>
-      Utility functions provided to aid in converting any dataset into the LCT
-      data format
-    </p>
-    <p>Built-in nuScenes and Waymo conversion script</p>
+      <hr style="margin-top: 50px; border: 1px solid #dc60765a" />
 
-    <h3>Visualization Tool</h3>
-    <p>Visualizes LCT data format</p>
-    <p>Easily switch between point cloud and RGB view</p>
-    <p>Rotate point cloud in free space</p>
-    <p>Filter what annotations are shown</p>
+      <h1 class="section-text">Features</h1>
 
-    <h2 style="text-align: center">Benefits over alternative methods:</h2>
-    <p>No need to</p>
+      <div style="display: flex">
+        <div style="flex: 1">
+          <img src="assets/folder.png" />
+          <h2 class="center">Our Data Format API</h2>
+
+          <div style="margin-left: 25px; margin-right: 25px">
+            <p>
+              <strong>camera</strong> &#8594; RGB images from different cameras
+            </p>
+            <p>
+              <strong>pointcloud</strong> &#8594; LiDAR pointclouds for each
+              sensor as PCD files
+            </p>
+            <p>
+              <strong>bounding</strong> &#8594; Ground truth bounding boxes for
+              each frame as JSON files
+            </p>
+            <p>
+              <strong>pred_bounding</strong> &#8594; Predicted bounding boxes
+              for each frame as JSON files
+            </p>
+            <p>
+              <strong>ego</strong> &#8594; Translation and rotation for each
+              frame as JSON files
+            </p>
+          </div>
+        </div>
+
+        <div style="flex: 1">
+          <img src="assets/file.png" />
+          <h2 class="center">Conversion Tool</h2>
+
+          <div style="margin-left: 25px; margin-right: 25px">
+            <p>
+              Utility functions provided to aid in converting any dataset into
+              the our data format
+            </p>
+            <p>Built-in nuScenes and Waymo conversion script</p>
+          </div>
+        </div>
+
+        <div style="flex: 1">
+          <img src="assets/visualization.png" />
+          <h2 class="center">Visualization Tool</h2>
+
+          <div style="margin-left: 25px; margin-right: 25px">
+            <p>Visualizes our data format</p>
+            <p>Easily switch between point cloud and RGB view</p>
+            <p>Rotate point cloud in free space</p>
+            <p>Filter what annotations are shown</p>
+          </div>
+        </div>
+      </div>
+
+      <hr style="margin-top: 50px; border: 1px solid #dc60765a" />
+
+      <h1 class="section-text">Benefits</h1>
+      <div style="display: flex">
+        <p style="flex: 1">
+          Users can interact with the whole dataset at one time
+        </p>
+        <p style="flex: 1">Users do not have to parse each dataset manually</p>
+        <p style="flex: 1">Users can switch amongst all sensors</p>
+      </div>
+    </div>
   </body>
 </html>
